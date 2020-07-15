@@ -1,12 +1,6 @@
 import pygame,sys,random
 
 
-
-
-
-
-
-
 pygame.init()
 clock = pygame.time.Clock()
 
@@ -127,7 +121,7 @@ while 1:
 
      if snake_head in snake_list[1:len(snake_list)-1]:
             pygame.mixer.Sound.play(out_sound)
-            pyagem.quit()
+            pygame.quit()
 
 
 
