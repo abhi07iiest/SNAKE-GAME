@@ -44,8 +44,8 @@ game_font = pygame.font.Font("freesansbold.ttf",30)
 with open("highscore.txt","r") as hs:
     High_score = hs.read()
 
-eat_sound =  pygame.mixer.Sound('pong.ogg')
-out_sound =  pygame.mixer.Sound('score.ogg')
+#eat_sound =  pygame.mixer.Sound('pong.ogg')
+#out_sound =  pygame.mixer.Sound('score.ogg')
 
 
 while 1:
@@ -80,7 +80,7 @@ while 1:
 
 
      if -7<=snake_x-x <=7 and -7<= snake_y -y <=7:
-             pygame.mixer.Sound.play(eat_sound)
+             #pygame.mixer.Sound.play(eat_sound)
              snake_length +=1
              player1_score +=10
              x= random.randint(10,900)
@@ -120,7 +120,7 @@ while 1:
        pygame.draw.rect(screen,black,[gf,bf,20,20])
 
      if snake_head in snake_list[1:len(snake_list)-1]:
-            pygame.mixer.Sound.play(out_sound)
+            #pygame.mixer.Sound.play(out_sound)
             pygame.quit()
 
 
